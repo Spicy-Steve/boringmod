@@ -15,6 +15,9 @@
     "renderStatusInHUD": true,
     "onStarted": {
       "name": "BoredEffectEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "BoredEffectEffectExpires"
     }
   }
 }

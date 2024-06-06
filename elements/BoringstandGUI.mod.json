@@ -24,80 +24,50 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 150,
-          "y": 47
+          "x": 205,
+          "y": 46
         }
       },
       {
-        "type": "image",
+        "type": "outputslot",
         "data": {
-          "image": "boring_stand_1.png",
-          "use1Xscale": false,
-          "x": 168,
-          "y": 50
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": "CUSTOM:Boringpowder"
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
           "id": 1,
           "disablePickup": {
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 212,
-          "y": 57
+          "x": 205,
+          "y": 95
         }
       },
       {
-        "type": "outputslot",
+        "type": "button",
         "data": {
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
+          "name": "button_convert",
+          "text": "Convert",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "BoringStandButton1"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 235,
-          "y": 87
+          "width": 61,
+          "height": 20,
+          "x": 183,
+          "y": 69
         }
       },
       {
-        "type": "outputslot",
+        "type": "label",
         "data": {
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
+          "name": "label_boring_stand",
+          "text": {
+            "fixedValue": "Boring Stand"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 189,
-          "y": 87
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 4,
-          "disablePickup": {
-            "fixedValue": false
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
           },
-          "dropItemsWhenNotBound": true,
-          "x": 212,
-          "y": 96
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": ".png",
-          "use1Xscale": false,
-          "x": 207,
-          "y": 75
+          "x": 135,
+          "y": 45
         }
       }
     ],

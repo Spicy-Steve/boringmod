@@ -7,8 +7,17 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:badlands": "2024-06-06 20:37:50 +1200",
+      "minecraft:beach": "2024-06-06 20:51:46 +1200",
+      "minecraft:desert": "2024-06-06 20:38:23 +1200",
+      "minecraft:old_growth_pine_taiga": "2024-06-06 20:51:00 +1200",
       "minecraft:taiga": "2024-06-05 21:45:08 +1200",
-      "minecraft:river": "2024-06-06 19:27:17 +1200"
+      "minecraft:windswept_forest": "2024-06-06 20:49:25 +1200",
+      "minecraft:river": "2024-06-06 19:27:17 +1200",
+      "minecraft:swamp": "2024-06-06 20:49:49 +1200",
+      "minecraft:windswept_hills": "2024-06-06 20:54:13 +1200",
+      "minecraft:old_growth_spruce_taiga": "2024-06-06 20:49:23 +1200",
+      "minecraft:wooded_badlands": "2024-06-06 20:38:50 +1200"
     },
     "done": false
   },
@@ -72,6 +81,12 @@
     },
     "done": true
   },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2024-06-06 19:34:57 +1200"
+    },
+    "done": true
+  },
   "minecraft:nether/obtain_blaze_rod": {
     "criteria": {
       "blaze_rod": "2024-06-06 19:35:12 +1200"
@@ -84,15 +99,27 @@
     },
     "done": true
   },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2024-06-06 19:34:57 +1200"
-    },
-    "done": true
-  },
   "minecraft:recipes/brewing/brewing_stand": {
     "criteria": {
       "has_blaze_rod": "2024-06-06 19:35:12 +1200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-06-06 20:39:35 +1200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/brick": {
+    "criteria": {
+      "has_clay_ball": "2024-06-06 20:47:32 +1200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2024-06-06 20:47:32 +1200"
     },
     "done": true
   },
