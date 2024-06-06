@@ -1,0 +1,8 @@
+JVM Args:          
+Run Args:          "--client", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\stripClient\output.jar", "--server", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\stripServer\output.jar", "--ann", "1.20.4", "--output", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\merge\output.jar", "--inject", "false"
+JVM:               C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Classpath:         C:\Users\crazy\.mcreator\gradle\caches\modules-2\files-2.1\net.neoforged\mergetool\2.0.2\f65ce45660841dcf1a58363fdcef0dab4d5a26c8\mergetool-2.0.2-fatjar.jar
+Working Dir:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\merge
+Main Class:        net.neoforged.mergetool.ConsoleMerger
+Program log file:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\merge\log.log
+Output file:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\merge\output.jar

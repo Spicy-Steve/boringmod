@@ -1,0 +1,15 @@
+JVM Args:          
+Run Args:          "--task", "bundler_extract", "--input", "C:\Users\crazy\MCreatorWorkspaces\boringmod\.gradle\caches\minecraft\versions\1.20.4\server.jar", "--output", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\extractServer\output.jar", "--jar-only"
+JVM:               C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Classpath:         C:\Users\crazy\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\installertools\1.3.2\216361298c683887c4cf0cc62988b5c3fba713fb\installertools-1.3.2-fatjar.jar
+Working Dir:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\extractServer
+Main Class:        net.minecraftforge.installertools.ConsoleTool
+Program log file:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\extractServer\log.log
+Output file:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\extractServer\output.jar
+Task: BUNDLER_EXTRACT
+Input:   C:\Users\crazy\MCreatorWorkspaces\boringmod\.gradle\caches\minecraft\versions\1.20.4\server.jar
+Output:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\extractServer\output.jar
+All:     false
+JarOnly: true
+Libs:    false
+Extracted: versions/1.20.4/server-1.20.4.jar

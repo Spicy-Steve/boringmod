@@ -1,0 +1,20 @@
+JVM Args:          
+Run Args:          "--task", "MERGE_MAPPING", "--left", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\unpacked\config\joined.tsrg", "--right", "C:\Users\crazy\MCreatorWorkspaces\boringmod\.gradle\caches\minecraft\versions\1.20.4\client.txt", "--right-names", "right,left", "--classes", "--fields", "--methods", "--output", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\mergeMappings\output.jar"
+JVM:               C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+Classpath:         C:\Users\crazy\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\installertools\1.3.2\216361298c683887c4cf0cc62988b5c3fba713fb\installertools-1.3.2-fatjar.jar
+Working Dir:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\mergeMappings
+Main Class:        net.minecraftforge.installertools.ConsoleTool
+Program log file:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\mergeMappings\log.log
+Output file:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\mergeMappings\output.jar
+Task: MERGE_MAPPING
+Left:    C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\unpacked\config\joined.tsrg
+         Reversed=false
+         null
+Right:   C:\Users\crazy\MCreatorWorkspaces\boringmod\.gradle\caches\minecraft\versions\1.20.4\client.txt
+         Reversed=false
+         right,left
+Classes: true
+Fields:  true
+Methods: true
+Params:  false
+Output:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\mergeMappings\output.jar

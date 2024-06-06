@@ -1,0 +1,95 @@
+{
+  "mod_elements": [
+    {
+      "name": "BoronrodPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boronrod_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/procedures/BoronrodPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boronrod",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boronrod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/item/BoronrodItem.java",
+          "src/main/resources/assets/boringmod/models/item/boronrod.json"
+        ]
+      }
+    },
+    {
+      "name": "Boringtab",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringtab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Bore",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/boringmod/neoforge/biome_modifier/bore_biome_modifier.json",
+          "src/main/java/net/spicysteve/boringmod/entity/BoreEntity.java",
+          "src/main/resources/assets/boringmod/models/item/bore_spawn_egg.json",
+          "src/main/java/net/spicysteve/boringmod/client/renderer/BoreRenderer.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "item.boringmod.boronrod": "Boron Rod",
+      "item_group.boringmod.boringtab": "Boring Stuff",
+      "item.boringmod.bore_spawn_egg": "Bore Spawn Egg",
+      "entity.boringmod.bore": "Bore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "boringmod",
+    "modName": "Boring Mod",
+    "version": "1.0.0",
+    "author": "crazy, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.4",
+    "modElementsPackage": "net.spicysteve.boringmod"
+  },
+  "mcreatorVersion": 202400118518
+}

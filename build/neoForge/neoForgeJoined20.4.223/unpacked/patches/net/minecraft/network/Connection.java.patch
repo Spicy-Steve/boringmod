@@ -1,0 +1,65 @@
+--- a/net/minecraft/network/Connection.java
++++ b/net/minecraft/network/Connection.java
+@@ -110,6 +110,7 @@
+         if (this.delayedDisconnect != null) {
+             this.disconnect(this.delayedDisconnect);
+         }
++        net.neoforged.neoforge.network.connection.ConnectionUtils.setConnection(p_129525_, this);
+     }
+ 
+     public static void setInitialProtocolAttributes(Channel p_294962_) {
+@@ -120,6 +121,7 @@
+     @Override
+     public void channelInactive(ChannelHandlerContext p_129527_) {
+         this.disconnect(Component.translatable("disconnect.endOfStream"));
++        net.neoforged.neoforge.network.connection.ConnectionUtils.removeConnection(p_129527_);
+     }
+ 
+     @Override
+@@ -135,6 +137,14 @@
+                     this.disconnect(Component.translatable("disconnect.timeout"));
+                 } else {
+                     Component component = Component.translatable("disconnect.genericReason", "Internal Exception: " + p_129534_);
++                    PacketListener listener = this.packetListener;
++                    if (listener != null) {
++                        ConnectionProtocol protocol = listener.protocol();
++                        if (protocol == ConnectionProtocol.CONFIGURATION || protocol == ConnectionProtocol.PLAY) {
++                            // Neo: Always log critical network exceptions for config and play packets
++                            LOGGER.error("Exception caught in connection", p_129534_);
++                        }
++                    }
+                     if (flag) {
+                         LOGGER.debug("Failed to sent packet", p_129534_);
+                         if (this.getSending() == PacketFlow.CLIENTBOUND) {
+@@ -380,7 +390,7 @@
+         if (this.address == null) {
+             return "local";
+         } else {
+-            return p_295875_ ? this.address.toString() : "IP hidden";
++            return p_295875_ ? net.neoforged.neoforge.network.DualStackUtils.getAddressString(this.address) : "IP hidden";
+         }
+     }
+ 
+@@ -419,6 +429,7 @@
+     }
+ 
+     public static ChannelFuture connect(InetSocketAddress p_290034_, boolean p_290035_, final Connection p_290031_) {
++        net.neoforged.neoforge.network.DualStackUtils.checkIPv6(p_290034_.getAddress());
+         Class<? extends SocketChannel> oclass;
+         EventLoopGroup eventloopgroup;
+         if (Epoll.isAvailable() && p_290035_) {
+@@ -569,6 +580,14 @@
+ 
+     public float getAverageSentPackets() {
+         return this.averageSentPackets;
++    }
++
++    public Channel channel() {
++        return this.channel;
++    }
++
++    public PacketFlow getDirection() {
++        return this.receiving;
+     }
+ 
+     public void setBandwidthLogger(SampleLogger p_299187_) {
