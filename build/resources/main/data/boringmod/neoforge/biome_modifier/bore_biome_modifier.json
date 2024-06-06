@@ -1,8 +1,9 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": {
-    "type": "neoforge:any"
-  },
+  "biomes": [
+    "nether_wastes",
+    "badlands"
+  ],
   "spawners": {
     "type": "boringmod:bore",
     "weight": 20,

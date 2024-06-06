@@ -24,6 +24,8 @@ public class BoringmodModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BORINGTAB = REGISTRY.register("boringtab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.boringmod.boringtab")).icon(() -> new ItemStack(BoringmodModItems.BORONROD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(BoringmodModItems.BORONROD.get());
+				tabData.accept(BoringmodModItems.BORINGPOWDER.get());
+				tabData.accept(BoringmodModBlocks.BORINGSTAND.get().asItem());
 			})
 
 					.build());

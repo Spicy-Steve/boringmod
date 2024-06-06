@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Boring",
+    "splashName": "Splash Potion of Boring",
+    "lingeringName": "Lingering Potion of Boring",
+    "arrowName": "Arrow of Boring",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:BoredEffect"
+        },
+        "duration": 18000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

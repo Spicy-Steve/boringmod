@@ -67,7 +67,7 @@ public class Modelbore<T extends Entity> extends EntityModel<T> {
 		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.head.xRot = headPitch / (180F / (float) Math.PI);
 		this.lowerRods.yRot = ageInTicks / 20.f;
-		this.middleRods.yRot = headPitch / (180F / (float) Math.PI);
+		this.middleRods.yRot = ageInTicks;
 		this.topRods.yRot = ageInTicks;
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "stand": "boring_stand-block",
+        "base": "brewing_stand_base"
+      },
+      "name": "default"
+    }
+  }
+}

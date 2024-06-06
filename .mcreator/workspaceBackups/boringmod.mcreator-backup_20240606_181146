@@ -1,0 +1,225 @@
+{
+  "mod_elements": [
+    {
+      "name": "BoronrodPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boronrod_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/procedures/BoronrodPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boronrod",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boronrod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/item/BoronrodItem.java",
+          "src/main/resources/assets/boringmod/models/item/boronrod.json"
+        ]
+      }
+    },
+    {
+      "name": "Boringtab",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringtab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Bore",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/boringmod/neoforge/biome_modifier/bore_biome_modifier.json",
+          "src/main/java/net/spicysteve/boringmod/entity/BoreEntity.java",
+          "src/main/resources/assets/boringmod/models/item/bore_spawn_egg.json",
+          "src/main/java/net/spicysteve/boringmod/client/renderer/BoreRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Boringpowder",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringpowder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/boringmod/models/item/boringpowder.json",
+          "src/main/java/net/spicysteve/boringmod/item/BoringpowderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Boringstand",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringstand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/block/BoringstandBlock.java",
+          "src/main/java/net/spicysteve/boringmod/block/entity/BoringstandBlockEntity.java",
+          "src/main/resources/assets/boringmod/models/item/boringstand.json",
+          "src/main/resources/assets/boringmod/models/block/boringstand.json",
+          "src/main/resources/data/boringmod/loot_tables/blocks/boringstand.json",
+          "src/main/resources/assets/boringmod/blockstates/boringstand.json"
+        ]
+      }
+    },
+    {
+      "name": "BoringPowerRecipie",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boring_power_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/boringmod/recipes/boringpowerrecipie.json"
+        ]
+      }
+    },
+    {
+      "name": "BoringStandRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boring_stand_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/boringmod/recipes/boringstandrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BoringstandGUI",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringstand_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/world/inventory/BoringstandGUIMenu.java",
+          "src/main/java/net/spicysteve/boringmod/client/gui/BoringstandGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BoredEffect",
+      "type": "potioneffect",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/potion/BoredEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "BoredEffectEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_effect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/spicysteve/boringmod/procedures/BoredEffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boringpotion",
+      "type": "potion",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boringpotion",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Boringstand"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.minecraft.lingering_potion.effect.boringpotion": "Lingering Potion of Boring",
+      "item.minecraft.tipped_arrow.effect.boringpotion": "Arrow of Boring",
+      "item.boringmod.boringpowder": "Boringpowder",
+      "block.boringmod.boringstand": "Boring Stand",
+      "item.boringmod.boronrod": "Boron Rod",
+      "effect.boringmod.bored_effect": "Bored",
+      "item_group.boringmod.boringtab": "Boring Stuff",
+      "item.minecraft.potion.effect.boringpotion": "Potion of Boring",
+      "item.boringmod.bore_spawn_egg": "Bore Spawn Egg",
+      "entity.boringmod.bore": "Bore",
+      "item.minecraft.splash_potion.effect.boringpotion": "Splash Potion of Boring"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "boringmod",
+    "modName": "Boring Mod",
+    "version": "1.0.0",
+    "author": "crazy, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.4",
+    "modElementsPackage": "net.spicysteve.boringmod"
+  },
+  "mcreatorVersion": 202400118518
+}
