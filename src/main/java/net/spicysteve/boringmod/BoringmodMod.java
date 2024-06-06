@@ -4,8 +4,13 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.spicysteve.boringmod.init.BoringmodModTabs;
+import net.spicysteve.boringmod.init.BoringmodModPotions;
+import net.spicysteve.boringmod.init.BoringmodModMobEffects;
+import net.spicysteve.boringmod.init.BoringmodModMenus;
 import net.spicysteve.boringmod.init.BoringmodModItems;
 import net.spicysteve.boringmod.init.BoringmodModEntities;
+import net.spicysteve.boringmod.init.BoringmodModBlocks;
+import net.spicysteve.boringmod.init.BoringmodModBlockEntities;
 
 import net.neoforged.neoforge.network.registration.IPayloadRegistrar;
 import net.neoforged.neoforge.network.handling.IPlayPayloadHandler;
@@ -40,9 +45,16 @@ public class BoringmodMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
+		BoringmodModBlocks.REGISTRY.register(modEventBus);
+		BoringmodModBlockEntities.REGISTRY.register(modEventBus);
 		BoringmodModItems.register(modEventBus);
 		BoringmodModEntities.REGISTRY.register(modEventBus);
 		BoringmodModTabs.REGISTRY.register(modEventBus);
+
+		BoringmodModPotions.REGISTRY.register(modEventBus);
+		BoringmodModMobEffects.REGISTRY.register(modEventBus);
+
+		BoringmodModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

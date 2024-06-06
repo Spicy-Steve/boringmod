@@ -1,0 +1,5 @@
+/effect give @a boringmod:bored_effect
+/setblock ~2 ~ ~-1 minecraft:bedrock
+/setblock ~2 ~1 ~-1 minecraft:bedrock
+/setblock ~-2 ~1 ~-1 minecraft:bedrock
+/setblock ~-2 ~1 ~1 minecraft:bedrock

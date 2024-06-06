@@ -1,0 +1,10 @@
+{
+  "parent": "boringmod:custom/brewing_stand",
+  "textures": {
+    "all": "boringmod:block/brewing_stand_base",
+    "particle": "boringmod:block/brewing_stand_base",
+    "stand": "boringmod:block/boring_stand-block",
+    "base": "boringmod:block/brewing_stand_base"
+  },
+  "render_type": "cutout"
+}
