@@ -3,3 +3,11 @@
 /setblock ~2 ~1 ~-1 minecraft:bedrock
 /setblock ~-2 ~1 ~-1 minecraft:bedrock
 /setblock ~-2 ~1 ~1 minecraft:bedrock
+/locate biome minecraft:badlands
+/time set day
+/tp @s 2913 133 2410
+/summon boringmod:bore
+/give @a minecraft:netherite_sword
+/effect clear
+/clear
+/effect clear

@@ -2,7 +2,6 @@
 package net.spicysteve.boringmod.world.inventory;
 
 import net.spicysteve.boringmod.init.BoringmodModMenus;
-import net.spicysteve.boringmod.init.BoringmodModItems;
 
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -44,7 +43,7 @@ public class BoringstandGUIMenu extends AbstractContainerMenu implements Supplie
 		super(BoringmodModMenus.BORINGSTAND_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(5);
+		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -84,7 +83,7 @@ public class BoringstandGUIMenu extends AbstractContainerMenu implements Supplie
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 11) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 80, 10) {
 			private final int slot = 0;
 
 			@Override
@@ -92,32 +91,8 @@ public class BoringstandGUIMenu extends AbstractContainerMenu implements Supplie
 				return Items.CLAY_BALL == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 87, 21) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 59) {
 			private final int slot = 1;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return BoringmodModItems.BORINGPOWDER.get() == stack.getItem();
-			}
-		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 110, 51) {
-			private final int slot = 2;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 64, 51) {
-			private final int slot = 3;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
-		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 87, 60) {
-			private final int slot = 4;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -151,16 +126,16 @@ public class BoringstandGUIMenu extends AbstractContainerMenu implements Supplie
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 5) {
-				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
+			if (index < 2) {
+				if (!this.moveItemStackTo(itemstack1, 2, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
-				if (index < 5 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 2, false)) {
+				if (index < 2 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 2 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 2, 2 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
