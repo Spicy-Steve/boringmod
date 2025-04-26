@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "nether_wastes",
+    "badlands"
+  ],
+  "spawners": {
+    "type": "boringmod:bore",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

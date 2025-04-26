@@ -266,8 +266,8 @@
   "language_map": {
     "en_us": {
       "gui.boringmod.boringstand_gui.label_boring_stand": "Boring Stand",
-      "block.boringmod.boringstand": "Boring Stand",
       "gui.boringmod.boringstand_gui.button_convert": "Convert",
+      "block.boringmod.boringstand": "Boring Stand",
       "item.boringmod.boronrod": "Boron Rod",
       "effect.boringmod.bored_effect": "Bored",
       "item_group.boringmod.boringtab": "Boring Stuff",
@@ -289,7 +289,7 @@
     "modName": "Boring Mod",
     "version": "1.0.0",
     "author": "SpicySteve",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/Spicy-Steve/boringmod",
     "license": "Apache License version 2.0",
     "serverSideOnly": false,
     "modPicture": "icon",

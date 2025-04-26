@@ -1,7 +1,7 @@
 JVM Args:          
 Run Args:          "--inJar", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\rename\output.jar", "--outJar", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\applyForgesAccessTransformer\output.jar", "--atFile", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\accesstransformers\Forges\accesstransformer.cfg", "--atFile", "C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\accesstransformers\Forges\_script_neoforge.cfg"
-JVM:               C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
-Classpath:         C:\Users\crazy\.mcreator\gradle\caches\modules-2\files-2.1\net.neoforged.accesstransformers\at-cli\10.0.2\b5e9c69c0556953dd0b89348f0c1ac3f8caffaf3\at-cli-10.0.2-fatjar.jar
+JVM:               C:\Users\crazy\.gradle\jdks\eclipse_adoptium-17-amd64-windows\jdk-17.0.11+9\bin\java.exe
+Classpath:         C:\Users\crazy\.gradle\caches\modules-2\files-2.1\net.neoforged.accesstransformers\at-cli\10.0.5\301828136f67902ff39243c055173512c84ccdee\at-cli-10.0.5-fatjar.jar
 Working Dir:       C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\applyForgesAccessTransformer
 Main Class:        net.neoforged.accesstransformer.cli.TransformerProcessor
 Program log file:  C:\Users\crazy\MCreatorWorkspaces\boringmod\build\neoForm\neoFormJoined1.20.4-20231207.154220\steps\applyForgesAccessTransformer\log.log
